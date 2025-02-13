@@ -1,0 +1,21 @@
+//
+// Copyright (C) The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+hidl_interface {
+    name: "vendor.samsung_slsi.telephony.hardware.radioExternal@1.1",
+    root: "vendor.samsung_slsi.telephony.hardware",
+    system_ext_specific: true,
+    srcs: [
+        "IOemSlsiRadioExternal.hal",
+        "IOemSlsiRadioExternalInd.hal",
+        "IOemSlsiRadioExternalRes.hal",
+    ],
+    interfaces: [
+        "android.hidl.base@1.0",
+        "vendor.samsung_slsi.telephony.hardware.radioExternal@1.0",
+    ],
+    gen_java: true,
+}
